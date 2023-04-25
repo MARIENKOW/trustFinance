@@ -594,9 +594,9 @@ body {
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
             transform: translate(0, 0);
-    background: -webkit-gradient(linear, left top, right top, color-stop(-30%, transparent), to(#fff));
-    background: -o-linear-gradient(left, transparent -30%, #fff);
-    background: linear-gradient(90deg, transparent -30%, #fff);
+    background: -webkit-gradient(linear, left top, right top, color-stop(-70%, transparent), to(#fff));
+    background: -o-linear-gradient(left, transparent -70%, #fff);
+    background: linear-gradient(90deg, transparent -70%, #fff);
     text-align: right;
   }
   .PhotoRight__right img {
@@ -626,9 +626,9 @@ body {
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
             transform: translate(0, 0);
-    background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(130%, transparent));
-    background: -o-linear-gradient(left, #ffffff, transparent 130%);
-    background: linear-gradient(90deg, #ffffff, transparent 130%);
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(170%, transparent));
+    background: -o-linear-gradient(left, #ffffff, transparent 170%);
+    background: linear-gradient(90deg, #ffffff, transparent 170%);
     text-align: left;
   }
   .PhotoRight__right--escort img {
