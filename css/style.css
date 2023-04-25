@@ -123,12 +123,12 @@ input[type=number], input[type=number]:hover, input[type=number]:focus {
 }
 body {
   font-family: "montserrat";
+  font-weight: 400;
 }
 
 .main {
   position: relative;
   z-index: 4;
-  min-height: 2000px;
   display: grid;
   grid-template-columns: 250px auto 250px;
 }
@@ -183,6 +183,11 @@ body {
   -o-transition: 0.2s;
   transition: 0.2s;
   outline: 2px solid transparent;
+}
+@media (max-width: 768px) {
+  .btn {
+    font-size: 16px;
+  }
 }
 .btn span {
   position: relative;
@@ -527,6 +532,9 @@ body {
   max-width: 50%;
   padding: 0px 20px 0px 0px;
 }
+.PhotoRight__left--escort {
+  max-width: calc(50% + 50px);
+}
 @media (max-width: 768px) {
   .PhotoRight__left {
     max-width: 100%;
@@ -547,9 +555,21 @@ body {
 .PhotoRight__subtitle {
   font-size: 18px;
   margin: 30px 0px;
+  line-height: 130%;
+}
+.PhotoRight__subtitle--escort {
+  margin: 90px 0px;
+}
+@media (max-width: 768px) {
+  .PhotoRight__subtitle--escort {
+    margin: 65px 0px;
+  }
 }
 .PhotoRight__btn {
   max-width: 300px;
+}
+.PhotoRight__btn--escort {
+  max-width: 420px;
 }
 .PhotoRight__right {
   width: 50%;
@@ -580,8 +600,45 @@ body {
     text-align: right;
   }
   .PhotoRight__right img {
-    width: 70%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 80%;
     opacity: 0.2;
+    -o-object-position: left;
+       object-position: left;
+  }
+}
+.PhotoRight__right--escort {
+  width: 55%;
+  min-width: 55%;
+  max-width: 55%;
+}
+@media (max-width: 768px) {
+  .PhotoRight__right--escort {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    min-width: none;
+    max-width: none;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(130%, transparent));
+    background: -o-linear-gradient(left, #ffffff, transparent 130%);
+    background: linear-gradient(90deg, #ffffff, transparent 130%);
+    text-align: left;
+  }
+  .PhotoRight__right--escort img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 80%;
+    opacity: 0.2;
+    -o-object-position: right;
+       object-position: right;
   }
 }
 
