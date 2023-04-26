@@ -114,7 +114,7 @@
          </div>
       </section>
       <div style="z-index: 2;" class="main__in">
-         <section class="PhotoRight intro">
+         <section id="intro" class="PhotoRight intro">
             <div class="wrapper">
                <div class="container">
                   <div class="PhotoRight__inner">
@@ -132,7 +132,7 @@
                <img src="img/intro/rightImg.png" alt="right-img">
             </div>
          </section>
-         <section class="PhotoRight investition">
+         <section id="investition" class="PhotoRight investition">
             <div class="wrapper">
                <div class="container">
                   <div class="PhotoRight__inner">
@@ -150,7 +150,7 @@
                <img src="img/investition/rightImg.png" alt="right-img">
             </div>
          </section>
-         <section class="PhotoRight escort">
+         <section id="escort" class="PhotoRight escort">
             <div class="wrapper">
                <div class="container">
                   <div class="PhotoRight__inner">
@@ -168,6 +168,44 @@
             </div>
             <div class="PhotoRight__right PhotoRight__right--escort">
                <img src="img/escort/right-img.png" alt="right-img">
+            </div>
+         </section>
+         <section id="contacts" class="contacts">
+            <div class="wrapper">
+               <div class="container--2 container">
+                  <div class="contacts__inner">
+                     <form action="#" class="contacts__form">
+                        <section class="contacts__main">
+                           <h1 class="contacts__title">Contact us</h1>
+                           <span class="contacts__wrapper contacts__wrapper--name">
+                              <input data-type = 'name' class="contacts__input" placeholder="Your name" type="text">
+                           </span>
+                           <span class="contacts__wrapper contacts__wrapper--mail">
+                              <input data-type = 'mail' class="contacts__input" placeholder="Email" type="email">
+                           </span>
+                           <span class="contacts__wrapper contacts__wrapper--surname">
+                              <input data-type = 'surname' class="contacts__input" placeholder="Your surname" type="text">
+                           </span>
+                           <span class="contacts__wrapper contacts__wrapper--phone">
+                              <input data-type = 'phone' class="contacts__input" placeholder="Phone" type="number">
+                           </span>
+                           <span class="contacts__wrapper contacts__wrapper--question">
+                              <input data-type = 'question' class="contacts__input contacts__input--question" placeholder="Question" type="text">
+                           </span>
+                        </section>
+                        <section class="contacts__bottom">
+                           <button class="_ajaxFormSend btn contacts__btn"><span>send</span></button>
+                           <div class="contacts__personal">
+                              <a href="mailto:info@suntex.io" class="contacts__mail">info@suntex.io</a>
+                              <div class="contacts__phone">
+                                 <a  href="tel:+1 000 000 00 00" class="contacts__number">+1 000 000 00 00</a>
+                                 <span>(GMT -4)</span>
+                              </div>
+                           </div>
+                        </section>
+                     </form>
+                  </div>
+               </div>
             </div>
          </section>
       </div>
@@ -231,5 +269,6 @@
          </div>
       </footer>
    <script type="module" src="js/app.mjs"></script>
+   <script type="module" src="js/sendToPHP.mjs"></script>
 </body>
 </html>
