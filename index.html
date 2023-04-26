@@ -76,8 +76,8 @@
                      </label>
                   </button>
                   <button>
-                     <input type="radio" name="navigation" id="case">
-                     <label for="case">
+                     <input type="radio" name="navigation" id="portfolio">
+                     <label for="portfolio">
                         <span class="sidebar__link">top 3 portfolios</span>
                         <span class="sidebar__dot">
                            <span></span>
@@ -115,14 +115,14 @@
          </div>
       </section>
       <div style="z-index: 2;" class="main__in">
-         <section id="intro" class="PhotoRight intro">
+         <section data-navigation="intro" class="PhotoRight intro">
             <div class="wrapper">
                <div class="container">
                   <div class="PhotoRight__inner">
                      <article class="PhotoRight__left">
                         <h1 class="PhotoRight__title">Our task is to increase your investment income!</h1>
                         <p class="PhotoRight__subtitle">For clients with free investment capital, tools such as trust management and financial planning are available to help them achieve their investment goals...</p>
-                        <button class="PhotoRight__btn btn">
+                        <button data-contacts class="PhotoRight__btn btn">
                            <span>LEARN MORE</span>
                         </button>
                      </article>
@@ -133,14 +133,14 @@
                <img src="img/intro/rightImg.png" alt="right-img">
             </div>
          </section>
-         <section id="investition" class="PhotoRight investition">
+         <section data-navigation="investition" class="PhotoRight investition">
             <div class="wrapper">
                <div class="container">
                   <div class="PhotoRight__inner">
                      <article class="PhotoRight__left">
                         <h1 class="PhotoRight__title">Investment portfolio</h1>
                         <p class="PhotoRight__subtitle">Getting your first investment portfolio from experts in the financial market is the process of creating a diversified investment plan based on your situation and goals, with the goal of optimizing returns and reducing risk to achieve your financial goals!</p>
-                        <button class="PhotoRight__btn investition__btn btn">
+                        <button data-contacts class="PhotoRight__btn investition__btn btn">
                            <span>GET A PORTFOLIO</span>
                         </button>
                      </article>
@@ -151,7 +151,7 @@
                <img src="img/investition/rightImg.png" alt="right-img">
             </div>
          </section>
-         <section id="escort" class="PhotoRight escort">
+         <section data-navigation="escort" class="PhotoRight escort">
             <div class="wrapper">
                <div class="container">
                   <div class="PhotoRight__inner">
@@ -160,7 +160,7 @@
                            from the best specialists <br>
                            in finance</h1>
                         <p class="PhotoRight__subtitle PhotoRight__subtitle--escort">Reliable financial support is the key to your financial stability and success!</p>
-                        <button class="PhotoRight__btn PhotoRight__btn--escort btn">
+                        <button data-contacts class="PhotoRight__btn PhotoRight__btn--escort btn">
                            <span>SIGN UP FOR A CONSULTATION</span>
                         </button>
                      </article>
@@ -171,7 +171,7 @@
                <img src="img/escort/right-img.png" alt="right-img">
             </div>
          </section>
-         <section id="ways" class="ways">
+         <section data-navigation="ways" class="ways">
             <div class="wrapper">
                <div class="container">
                   <div class="ways__inner">
@@ -233,7 +233,7 @@
                </div>
             </div>
          </section>
-         <section class="portfolio">
+         <section data-navigation="portfolio" class="portfolio">
             <div class="wrapper">
                <div class="container">
                   <h1 class="portfolio__main">TOP-3 Portfolio by return</h1>
@@ -287,7 +287,7 @@
                </div>
             </div>
          </section>
-         <section id="whyUs" class="whyUs">
+         <section data-navigation="whyUs" class="whyUs">
             <div class="wrapper">
                <div class="container">
                   <div class="whyUs__inner">
@@ -348,7 +348,7 @@
                </div>
             </div>
          </section>
-         <section id="contacts" class="contacts">
+         <section data-navigation="contacts" id="contacts" class="contacts">
             <div class="wrapper">
                <div class="container--2 container">
                   <div class="contacts__inner">
@@ -427,13 +427,13 @@
                <nav class="_navigations footer__nav">
                   <div class="footer__block">
                      <a data-scroll="intro" href="#" class="footer__link">home</a>
-                     <a data-scroll="demo" href="#" class="footer__link">investment portfolio</a>
+                     <a data-scroll="investition" href="#" class="footer__link">investment portfolio</a>
                      <a data-scroll="escort" href="#" class="footer__link">escort</a>
-                     <a data-scroll="destinations" href="#" class="footer__link">directions</a>
+                     <a data-scroll="ways" href="#" class="footer__link">directions</a>
                   </div>
                   <div class="footer__block footer__block--last">
-                     <a data-scroll="tools" href="#" class="footer__link">top 3 portfolios</a>
-                     <a data-scroll="about" href="#" class="footer__link">why us?</a>
+                     <a data-scroll="portfolio" href="#" class="footer__link">top 3 portfolios</a>
+                     <a data-scroll="whyUs" href="#" class="footer__link">why us?</a>
                      <a data-scroll="contacts" href="#" class="footer__link">contacts</a>
                   </div>
                   

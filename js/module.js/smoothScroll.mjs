@@ -28,13 +28,18 @@ function smoothScrollWrapper(){
    return function (element,position,speed = 0){
       if (previusPosition != null)return
       function scrollBottom(){
+         console.log('bot');
+         if(!document.body.classList.contains('_smooth')) document.body.classList.add('_smooth');
          setTimeout(()=>{
             if(window.scrollY+step >= whereToScroll){
                window.scrollTo(0,whereToScroll);
+               document.body.classList.remove('_smooth');
                return previusPosition = null
             }
             if(window.scrollY+step > document.body.clientHeight  - window.innerHeight){
                window.scrollTo(0,document.body.clientHeight  - window.innerHeight);
+               document.body.classList.remove('_smooth');
+               console.log(window.scrollY+step,document.body.clientHeight  - window.innerHeight);
                return previusPosition = null;
             }
             window.scrollTo(0,window.scrollY+step);
@@ -43,13 +48,18 @@ function smoothScrollWrapper(){
          },speed)
       }
       function scrollTop(){
+         console.log('top');
+         if(!document.body.classList.contains('_smooth'))document.body.classList.add('_smooth');
          setTimeout(()=>{
             if(window.scrollY-step <= whereToScroll){
+               console.log(window.scrollY-step,whereToScroll);
                window.scrollTo(0,whereToScroll);
+               document.body.classList.remove('_smooth');
                return previusPosition = null
             }
             if(window.scrollY-step < 0) {
                window.scrollTo(0,0);
+               document.body.classList.remove('_smooth');
                return previusPosition = null;
             }
             window.scrollTo(0,window.scrollY-step);
@@ -59,7 +69,6 @@ function smoothScrollWrapper(){
       }
       const whereToScroll = toScroll(element,position);
       if(whereToScroll==='undefind')return;
-
       if(whereToScroll>window.scrollY)scrollBottom()
       if(whereToScroll<window.scrollY)scrollTop()
    }
